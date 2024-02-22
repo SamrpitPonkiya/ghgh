@@ -1,0 +1,152 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  height: 100vh;
+  background-color: #a8e0d8;
+  font-size: 62.5%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 5rem;
+  justify-content: center;
+}
+.heading {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+
+.label_input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.label_input label {
+  font-size: 0.9rem;
+}
+.student_detail {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+/* form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 500px;
+} */
+
+.student_detail input {
+  width: 28rem;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* EDUCATION */
+
+.education_plus {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.education_txt {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+.plus {
+  font-size: 2rem;
+  color: black;
+}
+
+/* EDUCATION DETAIL */
+
+.edu1_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.edu_detail input {
+  width: 15rem;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.edu_detail1 input {
+  width: 15rem;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.edu_detail,
+.edu_detail1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+#remove {
+  font-size: 1.8rem;
+  color: black;
+}
+
+/* TABLE START */
+#studentTable {
+  /* margin: auto;
+  margin-top: 2rem; */
+  border: 1px solid black;
+  color: black;
+  font-size: 1rem;
+  text-align: center;
+}
+
+#studentTable tr {
+  border: 1px solid #a8e0d8;
+}
+/* table end */
+
+.submit_div {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+input[type="submit"] {
+  background-color: rgb(85, 166, 163);
+  color: black;
+  padding: 14px 20px;
+  /* margin: 8px 0; */
+  border: 1px solid gray;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: auto;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(85, 166, 190);
+}

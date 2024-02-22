@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Field Repetition</title>
+    <style>
+      /* Add your CSS styles here */
+    </style>
+    <script src="
+      https://code.iconify.design/iconify-icon/2.0.0/iconify-icon.min.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <div class="field_container">
+        <div class="education_plus">
+          <div class="education_txt">Education:</div>
+          <div>
+            <a href="#" onclick="addField()">
+              <iconify-icon
+                class="plus"
+                icon="flat-color-icons:plus"
+              ></iconify-icon>
+            </a>
+          </div>
+        </div>
+
+        <div class="edu_detail">
+          <div class="label_input">
+            <label for="degree">Degree/Board</label>
+            <input type="text" class="degree" name="degree[]" required />
+          </div>
+          <div class="label_input">
+            <label for="school">School/College</label>
+            <input type="text" class="school" name="school[]" required />
+          </div>
+          <div class="label_input">
+            <label for="start_date">Start Date</label>
+            <input
+              type="date"
+              class="start_date"
+              name="start_date[]"
+              required
+            />
+          </div>
+          <div class="label_input">
+            <label for="passout_date">Passout Date</label>
+            <input
+              type="date"
+              class="passout_date"
+              name="passout_date[]"
+              required
+            />
+          </div>
+          <div class="label_input">
+            <label for="percentage">Percentage</label>
+            <input
+              type="text"
+              class="percentage"
+              placeholder="Don't use % sign"
+              name="percentage[]"
+              required
+            />
+          </div>
+          <div class="label_input">
+            <label for="backlog">Backlog</label>
+            <input
+              type="text"
+              class="backlog"
+              placeholder="If any"
+              name="backlog[]"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function addField() {
+        // Clone the field container
+        const container = document.getElementById("container");
+        const clonedContainer = container.firstElementChild.cloneNode(true);
+
+        // Append the cloned container after the last container
+        container.appendChild(clonedContainer);
+      }
+    </script>
+  </body>
+</html>
